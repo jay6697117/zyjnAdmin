@@ -1,0 +1,15 @@
+import axios from '../../axios'
+
+// 分时段列表
+export const list = (data) => {
+  return axios({
+    url: '/dataSummary/courseLatitudeData',
+    data
+  })
+}
+export const detail = (data) => {
+  return axios({
+    url: '/dataSummary/courseLatitudeDetails',
+    data
+  })
+}
